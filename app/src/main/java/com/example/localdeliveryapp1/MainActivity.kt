@@ -35,6 +35,7 @@ import com.example.localdeliveryapp1.Screens.DatabaseTestScreen
 
 import com.example.localdeliveryapp1.ui.theme.LocalDeliveryApp1Theme
 
+
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
