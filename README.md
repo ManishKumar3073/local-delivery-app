@@ -26,11 +26,7 @@ Navigation
 
 ## Demo
 
-[▶ Watch Demo]
-
-## Screenshots
-
-...
+[https://www.youtube.com/shorts/Zi8BPVmh4zM]
 
 ## Architecture
 
