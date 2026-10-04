@@ -39,17 +39,6 @@ fun CustomerHomeScreen(navController: NavController, vm: DeliveryViewModel) {
                     Text(text = shop, modifier = Modifier.padding(16.dp))
                 }
             }
-
-//            items(deliveries) { delivery ->
-//                DeliveryCard(
-//                    delivery = delivery,
-//                    onDelete = { vm.delete(it) },
-//                    onMarkDelivered = { updated ->
-//                        val u = updated.copy(status = "Delivered")
-//                        vm.update(u)
-//                    }
-//                )
-//            }
         }
     }
 }

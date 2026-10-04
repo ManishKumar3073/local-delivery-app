@@ -71,7 +71,7 @@ class MainActivity : ComponentActivity() {
                     }
 
                     composable(Screen.CustomerDetails.route) {
-                        CustomerDetailsScreen(navController)
+                        CustomerDetailsScreen(navController,deliveryVM)
                     }
 
                     composable(Screen.ShopkeeperHome.route) {

@@ -54,7 +54,8 @@ fun DatabaseTestScreen(vm: DeliveryViewModel) {
                         totalAmount = 200.0,
                         status = "Pending",
                         paymentMode = "Cash",
-                        productName = "product"
+                        productName = "product",
+                        shopName = "Test Shop"
                     )
 
                     scope.launch {

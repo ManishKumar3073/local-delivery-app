@@ -1,5 +1,6 @@
 package com.example.localdeliveryapp1.ui.Screens
 
+import DeliveryViewModel
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.material3.*
@@ -12,7 +13,9 @@ import androidx.navigation.NavController
 import com.example.localdeliveryapp1.Navigation.Screen
 
 @Composable
-fun CustomerDetailsScreen(navController: NavController) {
+fun CustomerDetailsScreen(navController: NavController,
+                          vm: DeliveryViewModel)
+{
     var name by remember { mutableStateOf("") }
     var phone by remember { mutableStateOf("") }
     var address by remember { mutableStateOf("") }
@@ -41,6 +44,11 @@ fun CustomerDetailsScreen(navController: NavController) {
 
             Button(
                 onClick = {
+                    vm.saveCustomerDetails(
+                        name = name,
+                        phone = phone,
+                        address = address
+                    )
                     navController.navigate(Screen.CustomerHome.route)
                 },
                 modifier = Modifier.fillMaxWidth()
