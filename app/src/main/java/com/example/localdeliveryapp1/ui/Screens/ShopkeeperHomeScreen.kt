@@ -94,6 +94,7 @@ fun DeliveryItem(delivery: DeliveryEntity, vm: ShopkeeperViewModel) {
             Text("Customer: ${delivery.customerName}")
             Text("Phone: ${delivery.customerPhone}")
             Text("Address: ${delivery.address}")
+            Text("Products: ${delivery.productName}")
             Text("Status: ${delivery.status}")
             Text("Total: ₹${delivery.totalAmount}")
 
